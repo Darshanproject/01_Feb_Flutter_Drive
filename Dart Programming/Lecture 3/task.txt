@@ -1,0 +1,14 @@
+1). This is our res menu
+    1
+    2
+    3
+    4
+    5
+    what do you like to order he/she
+    2
+    qut
+    2
+    do you want ot order something else ?
+    YES or NO
+    YES
+2). 
