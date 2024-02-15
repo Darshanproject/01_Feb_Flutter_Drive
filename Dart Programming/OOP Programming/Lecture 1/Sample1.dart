@@ -10,7 +10,7 @@ void main(){
 }
 */
 class Tops{    ///creating class 
-  faculty(){          //Creating Method
+  faculty(){          ///Creating Method
     print("Darhan");
   }                 
   students(){       ///Creating Mehod
