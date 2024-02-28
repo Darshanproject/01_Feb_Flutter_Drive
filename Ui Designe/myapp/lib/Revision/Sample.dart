@@ -14,6 +14,15 @@ class _My_BottonsState extends State<My_Bottons> {
   TextEditingController name = TextEditingController();
   TextEditingController pass = TextEditingController();
   bool selcet = true;
+
+  void reverse(String rev){
+    var i= 0;
+    while (i != 0) {
+      var xyz = pass.text.length % 10;
+      var  rev = pass.text.length /10;
+      var revp = pass.text.length * 10;
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
