@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/Revision/List.dart';
+import 'package:myapp/Revision/List1.dart';
 import 'package:myapp/Revision/Sample.dart';
+import 'package:myapp/Revision/Sample1.dart';
 import 'package:myapp/Screens/List1.dart';
 import 'package:myapp/Screens/Myhome.dart';
 import 'package:myapp/Screens/TextField_Screen.dart';
@@ -15,7 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: My_Bottons(),
+      debugShowCheckedModeBanner: false,
+      home: List_Sample1(),
     );
   }
 }
