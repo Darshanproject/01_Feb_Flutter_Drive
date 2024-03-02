@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class List_Sample1 extends StatefulWidget {
@@ -12,7 +14,10 @@ class _List_Sample1State extends State<List_Sample1> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(),
       body: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
         itemCount: name.length,
         itemBuilder: (cxt , int ind){
         return InkWell(

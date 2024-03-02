@@ -13,6 +13,7 @@ class _List_SampleState extends State<List_Sample> {
     return  Scaffold(
       appBar: AppBar(),
       body: ListView(
+        shrinkWrap: true,
         children: [
           Card(
             
