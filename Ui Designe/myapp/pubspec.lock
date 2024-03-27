@@ -70,6 +70,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+  flutter_seekbar:
+    dependency: "direct main"
+    description:
+      name: flutter_seekbar
+      sha256: b4fc58e2464875e50d7387d77f5374b0a774c5912dc8cd28ce15f0d7c19cda83
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -210,3 +218,4 @@ packages:
     version: "13.0.0"
 sdks:
   dart: ">=3.3.0 <4.0.0"
+  flutter: ">=1.17.0"

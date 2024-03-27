@@ -4,6 +4,8 @@ import 'package:myapp/Const/export.dart';
 import 'package:myapp/Coustom%20widgets/Back_Screen.dart';
 import 'package:myapp/Coustom%20widgets/Button.dart';
 import 'package:myapp/Coustom%20widgets/Text_fileds.dart';
+import 'package:myapp/Screen/Auth/Reg_Screen.dart';
+import 'package:myapp/Screen/Home/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -57,14 +59,16 @@ class _LoginState extends State<Login> {
             }
            ),
            TextButton(onPressed: (){
-
-           }, child: "Forget Password ?".text.make()),
+              Get.offAll(()=>Reg_Screen());
+           }, child: "Reg or Sigup ?".text.make()),
             25.heightBox,
             SizedBox(
               width: context.screenWidth - 150,
               child: Button_(
                 color: red,
-                onpress: (){},
+                onpress: (){
+                  Get.offAll(()=>Home());
+                },
                 title: login,
                 textcolor: Colors.white,
                 textsize: 24
