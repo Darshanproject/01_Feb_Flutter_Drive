@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/Advance/Bottom.dart';
+import 'package:myapp/Advance/TabBar.dart';
 import 'package:myapp/Screens/NewSample.dart';
 
 void main(){
@@ -10,8 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+    
       debugShowCheckedModeBanner: false,
-      home: NewSample(),
+      home: Bottom_Screen(),
     );
   }
 }
