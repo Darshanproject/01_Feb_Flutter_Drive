@@ -16,7 +16,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 6), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context)=>NotesScreen())));
+    Timer(Duration(seconds: 6), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context)=>Note_Screen())));
   }
   Widget build(BuildContext context) {
     return  Scaffold(
