@@ -1,0 +1,60 @@
+<?php
+
+$servername = "localhost";
+$username = "id20010002_fluttercrude";
+$password = "Darshangadatops@2503";
+$database = "id20010002_gadadarshan";
+
+// Create connection
+$con = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+?>
+///////connection files ends here
+<?php
+
+        include('connection.php');
+            $name=$_POST["name"];
+            $surname=$_POST["surname"];
+            $email=$_POST["email"];
+            $password=$_POST["password"];
+            if($name==" " && $surname==" " && $email==" " && $password ==" " )
+            {
+                    echo '0';
+            }
+            else
+            {
+                    $sql="insert into Feb01 (name,surname,email,password) values('$name','$surname','$email','$password')";
+                    mysqli_query($con,$sql);
+            }
+
+
+?>
+////////insert files end here 
+<?php
+
+include('connection.php');
+
+$sql="select * from Feb01 ";
+
+$result=mysqli_query($con,$sql);
+
+$response=array();
+
+while($row=mysqli_fetch_array($result))
+{
+    array_push($response,array('id'=>$row['id'],'name'=>$row['name'],'email'=>$row['email'],'surname' =>$row['surname'],'imageurl'=>$row['imageurl'] ));
+
+}
+
+echo json_encode($response);
+
+mysqli_close($con);
+
+?>
+
+/////////////view files ends here 
